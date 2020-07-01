@@ -70,4 +70,4 @@ The following are the StateCodes -
 
 ## Source
 
-Our data is collected from the [Covid19India](https://github.com/covid19india/covid19india-react). Without their API, this project couldn't have been made
+Our data is collected from [Covid19India](https://github.com/covid19india/covid19india-react).
