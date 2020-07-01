@@ -1,5 +1,5 @@
 # Covid19 TimeLapse (India)
- Provides an easy to use TimeLapse graph to view the growth in number of cases in India 
+ Provides an easy to use TimeLapse graph to view the growth in number of Covid19 cases in India (Both daily and cumulative)
 ![](Demo.gif)
 
 ## Requirements
@@ -21,7 +21,9 @@ To generate a graph for a particular state, run the program by typing
 python Main.py STATECODE1 STATECODE2 ...
 ```
 
-Maximum 10 states can be plotted
+Note: Maximum 10 states can be plotted
+
+After that, follow the on screen Instructions
 
 The following are the StateCodes - 
 
