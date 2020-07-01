@@ -74,6 +74,11 @@ elif choice.upper()=='Y':
 else:
     print('Please enter a valid choice')
     exit()
+
+choice = int(input('Enter 1 for daily increase in cases, and 2 for total cases: '))
+if choice!=1 and choice!=2:
+    print('Enter a valid input')
+    exit()
 r = requests.get('https://api.covid19india.org/states_daily.json')
 
 data = r.json()
@@ -84,7 +89,10 @@ for state in data['states_daily']:
         dates.append(datetime.strptime(state['date'], '%d-%b-%y'))
         for i in range(1,len(params)):
             if params[i].lower() in nums:
-                nums[params[i].lower()].append(int(state[params[i].lower()]))
+                if choice==2:
+                    nums[params[i].lower()].append(nums[params[i].lower()][-1] + int(state[params[i].lower()]))
+                else:
+                    nums[params[i].lower()].append(int(state[params[i].lower()]))
             else:
                 nums[params[i].lower()] = [int(state[params[i].lower()])]
 cur = 1
@@ -99,12 +107,18 @@ def animate(i):
     plt.gcf().autofmt_xdate()
     cur+=1
     plt.legend()
-    plt.title('Daily increase in cases since Mar 14')
+    if choice==1:
+        plt.title('Daily increase in cases since Mar 14')
+    else:
+        plt.title('Total cases')
 
 if anim:
     ani = FuncAnimation(plt.gcf(), animate, interval=700)
 else:
-    plt.title('Daily increase in cases since Mar 14')
+    if choice==1:
+        plt.title('Daily increase in cases since Mar 14')
+    else:
+        plt.title('Total cases')
     for k,v in nums.items():
         print(v)
         plt.plot_date(dates, v, label=states_codes[k.upper()], linestyle='solid', marker=None)
