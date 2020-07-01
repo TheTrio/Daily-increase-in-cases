@@ -1,0 +1,45 @@
+Run without any arguments for India's graph.
+
+Run with State codes for graph of particular states
+
+The state codes are :
+'AN': 'Andaman and Nicobar Islands',
+'AP': 'Andhra Pradesh',
+'AR': 'Arunachal Pradesh',
+'AS': 'Assam',
+'BR': 'Bihar',
+'CH': 'Chandigarh',
+'CT': 'Chhattisgarh',
+'DD': 'Daman and Diu',
+'DL': 'Delhi',
+'DN': 'Dadra and Nagar Haveli',
+'GA': 'Goa',
+'GJ': 'Gujarat',
+'HP': 'Himachal Pradesh',
+'HR': 'Haryana',
+'JH': 'Jharkhand',
+'LK': 'Ladakh',
+'KA': 'Karnataka',
+'KL': 'Kerala',
+'LD': 'Lakshadweep',
+'MH': 'Maharashtra',
+'ML': 'Meghalaya',
+'MN': 'Manipur',
+'MP': 'Madhya Pradesh',
+'MZ': 'Mizoram',
+'NL': 'Nagaland',
+'OR': 'Odisha',
+'PB': 'Punjab',
+'PY': 'Puducherry',
+'RJ': 'Rajasthan',
+'SK': 'Sikkim',
+'TG': 'Telangana',
+'TN': 'Tamil Nadu',
+'TR': 'Tripura',
+'UP': 'Uttar Pradesh',
+'UT': 'Uttarakhand',
+'WB': 'West Bengal',
+'JK': 'Jammu and Kashmir',
+'TT': 'India'
+
+Maximum 10 states can be entered
