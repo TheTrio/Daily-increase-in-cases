@@ -30,7 +30,7 @@ The following are the StateCodes -
 | Code      | State |
 | ----------- | ----------- |
 | AN | Andaman and Nicobar Islands |
-| AN | Andhra Pradesh
+| AP | Andhra Pradesh
 | AR | Arunachal Pradesh |
 | AS | Assam |
 | BR | Bihar |
