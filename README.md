@@ -1,5 +1,5 @@
 # Covid19 TimeLapse (India)
- Provides an easy to use TimeLapse graph to view the growth in number of cases in India 
+ Provides an easy to use TimeLapse graph to view the growth in number of cases in India
 ![](Demo.gif)
 
 ## Requirements
@@ -15,7 +15,7 @@ To generate a graph for India, run the program by typing
 python Main.py
 ```
 
-To generate a graph for a particular state, run the program by typing 
+To generate a graph for a particular state, run the program by typing
 
 ```
 python Main.py STATECODE1 STATECODE2 ...
@@ -23,12 +23,12 @@ python Main.py STATECODE1 STATECODE2 ...
 
 Maximum 10 states can be plotted
 
-The following are the StateCodes - 
+The following are the StateCodes -
 
 | Code      | State |
 | ----------- | ----------- |
 | AN | Andaman and Nicobar Islands |
-| AN | Andhra Pradesh
+| AP | Andhra Pradesh |
 | AR | Arunachal Pradesh |
 | AS | Assam |
 | BR | Bihar |

@@ -49,8 +49,10 @@ date_format = mpl_dates.DateFormatter('%b %d')
 plt.style.use('seaborn')
 plt.figure(figsize=(50,30))
 plt.rc('ytick', labelsize=10)
+plt.grid(True)
 params = sys.argv
-
+plt.ticklabel_format(style='plain', axis='y')
+plt.gca().yaxis.set_major_formatter(plt.FuncFormatter(lambda x, loc: "{:,}".format(int(x))))
 state_names = []
 
 if len(params)==1:
